@@ -1,0 +1,20 @@
+{
+  "description": "Makes lines which contain '#c' or '#chapter' bold",
+  "name": "ep_chapterBold",
+  "version": "0.0.1",
+  "author": {
+    "name": "luto",
+    "email": "m@luto.at"
+  },
+  "contributors":
+  [
+  ],
+  "dependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shownotes/ep_chapterBold.git"
+  }
+}

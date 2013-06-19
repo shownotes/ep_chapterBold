@@ -1,0 +1,13 @@
+{
+  "parts":
+  [
+    {
+      "name": "main",
+      "client_hooks":
+      {
+        "acePostWriteDomLineHTML": "ep_chapterBold/static/js/index",
+        "aceEditorCSS": "ep_chapterBold/static/js/index"
+      }
+    }
+  ]
+}
