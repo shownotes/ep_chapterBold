@@ -1,7 +1,7 @@
 var tagRegex = /#([a-z]+)/ig;
 var shortcodes =
 {
-  "c": "chapter"
+  "c": "chapter",
   "r": "revision"
 }
 
