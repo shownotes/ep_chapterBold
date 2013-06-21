@@ -1,12 +1,20 @@
+var tagRegex = /#([a-z]+)/ig;
+var shortcodes =
+{
+  "c": "chapter"
+}
+
 var acePostWriteDomLineHTML = function(hook, obj)
 {
   var $node = $(obj.node);
   var text = $node.text();
-  var isChapter = / #c(hapter)?(\s+.*)?$/.test(text);
+  var matches = [];
 
-  if(isChapter)
+  while (matches = tagRegex.exec(text))
   {
-    $node.addClass('osfBold');
+    var tag = matches[1];
+    tag = shortcodes[tag] || tag;
+    $node.addClass('osf_tag_' + tag);
   }
 }
 
