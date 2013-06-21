@@ -1,7 +1,8 @@
 var tagRegex = /#([a-z]+)/ig;
 var shortcodes =
 {
-  "c": "chapter"
+  "c": "chapter",
+  "r": "revision"
 }
 
 var acePostWriteDomLineHTML = function(hook, obj)
@@ -20,7 +21,7 @@ var acePostWriteDomLineHTML = function(hook, obj)
 
 function aceEditorCSS()
 {
-  return ["ep_chapterBold/static/css/chapterbold.css"];
+  return ["ep_chapterBold/static/css/linestyle.css"];
 }
 
 exports.acePostWriteDomLineHTML = acePostWriteDomLineHTML;
