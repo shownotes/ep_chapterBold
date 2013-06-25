@@ -3,6 +3,7 @@
 }
 
 .osf_tag_revision {
+    font-family: monospace;
     font-weight: bold;
     font-style: italic;
 }
